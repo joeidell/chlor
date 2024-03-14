@@ -45,8 +45,8 @@
         const renderer = {
           type: "simple", // autocasts as new SimpleRenderer()
           symbol: defaultSym,
-          label: "Cemsis Block",
-          opacity: 0.5, // Set the opacity to 75%
+          label: "Census Block",
+          
           visualVariables:
            [
             {
@@ -58,12 +58,12 @@
               stops: [
                 {
                   value: 0,
-                  color: "#f5f0f2",
+                  color: "#ecedb4",
                   label: "0"
                 },
                 {
                   value: 7571,
-                  color: "#d10859",
+                  color: "#ed1f11",
                   label: "7571"
                 }
               ]
@@ -86,7 +86,7 @@
         });
 
         const map = new Map({
-          basemap: "streets",
+          basemap: "gray",
           layers: [povLayer]
         });
 
